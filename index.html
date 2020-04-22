@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nhận diện khuôn mặt Minh Hồ</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    #videoControl {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    canvas {
+      position: absolute; 
+    }
+    #faceStatus{
+      font-size: 80px;
+      margin-top: 0;
+    }
+    .redColor{
+      color: red;
+    }
+    .greenColor{
+      color: green;
+    }
+    .pinkColor{
+      color: rgb(246, 107, 131);
+    }
+    .purpleColor{
+      color: purple;
+    }
+    .yellowColor{
+      color: rgb(241, 255, 41);
+    }
+    .orgineColor{
+      color: rgb(245, 124, 11);
+    }
+    .blueColor{
+      color: rgb(56, 0, 240);
+    }
+  </style>
+</head>
+<body>
+  <div id="videoControl">
+    <video id="video" width="720" height="560" autoplay muted></video>
+  </div>
+  <div>
+      <div style="font-size: 20px;margin-top:10px">Trạng thái của bạn ở mức:<p id="faceStatus"></p> </div>
+  </div>
+  
+</body>
+</html>
